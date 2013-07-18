@@ -98,15 +98,6 @@ int i=0;
         NSLog(@"could not prepare to play");
       //  return YES;
     }
-    
-   // if (![music play])
-   // {
-    //    NSLog(@"could not play");
-   // }
-    
-   // return YES;
-    
-    
 
 }
 

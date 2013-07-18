@@ -23,6 +23,7 @@
 		3A9EFB84179503F200757A27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9EFB83179503F200757A27 /* AVFoundation.framework */; };
 		3A9EFB871797C48300757A27 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9EFB861797C48300757A27 /* MediaPlayer.framework */; };
 		3A9EFBBB179822D600757A27 /* sneeze.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EFB851797C3CA00757A27 /* sneeze.m4v */; };
+		3A9EFBBD1798383A00757A27 /* indiana jones icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EFBBC1798383A00757A27 /* indiana jones icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		3A9EFB83179503F200757A27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3A9EFB851797C3CA00757A27 /* sneeze.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = sneeze.m4v; sourceTree = "<group>"; };
 		3A9EFB861797C48300757A27 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3A9EFBBC1798383A00757A27 /* indiana jones icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indiana jones icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		3A74417B1794CAD30013C457 = {
 			isa = PBXGroup;
 			children = (
+				3A9EFBBC1798383A00757A27 /* indiana jones icon.png */,
 				3A74418D1794CAD30013C457 /* Jul18 */,
 				3A7441861794CAD30013C457 /* Frameworks */,
 				3A7441851794CAD30013C457 /* Products */,
@@ -183,6 +186,7 @@
 				3A7441A41794CAD30013C457 /* ViewController.xib in Resources */,
 				3A9EFB801794F95E00757A27 /* mnf_theme_music.mp3 in Resources */,
 				3A9EFB821795024A00757A27 /* Jeopardy_Theme.mp3 in Resources */,
+				3A9EFBBD1798383A00757A27 /* indiana jones icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
