@@ -7,13 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVAudioPlayer.h>  //needed for AVAudioPlayer
 
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    AVAudioPlayer *music;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) ViewController *viewController;
+
+- (IBAction)squeeze:(UIButton *)sender;
 
 @end

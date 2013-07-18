@@ -9,9 +9,9 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+BOOL a = FALSE;
 
 @implementation AppDelegate
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -19,8 +19,57 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+
+      //  NSString *title = [sender titleForState:UIControlStateNormal];
+       // statusText.text=[NSString stringWithFormat:@"%@ button pressed.", title];
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    if (bundle == nil) {
+        NSLog(@"could not get the main bundle");
+        return YES;
+    }
+    
+    //The path is the filename.
+    NSString *path =
+    [bundle pathForResource: @"indy_theme" ofType: @"mp3"];
+    if (path == nil) {
+        NSLog(@"could not get the path");
+        return YES;
+    }
+    NSLog(@"path == \"%@\"", path);
+    
+    NSURL *url = [NSURL fileURLWithPath: path isDirectory: NO];
+    NSLog(@"url == \"%@\"", url);
+    
+    NSError *error = nil;
+    music = [[AVAudioPlayer alloc]
+              initWithContentsOfURL: url error: &error];
+    if (music == nil) {
+        NSLog(@"error == %@", error);
+        return YES;
+    }
+    
+    music.volume = 1.0;		//the default
+    music.numberOfLoops = 0;	//negative number for infinite loop
+    /*
+     NSLog(@"player.numberOfChannels == %u",
+     player.numberOfChannels); //mono or stereo
+     */
+    
+    if (![music prepareToPlay]) {
+        NSLog(@"could not prepare to play");
+        return YES;
+    }
+  
+        if (![music play])
+        {
+            NSLog(@"could not play");
+        }
+    
     return YES;
-}
+ 
+    }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -18,6 +18,11 @@
 		3A74419E1794CAD30013C457 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A74419D1794CAD30013C457 /* Default-568h@2x.png */; };
 		3A7441A11794CAD30013C457 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7441A01794CAD30013C457 /* ViewController.m */; };
 		3A7441A41794CAD30013C457 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7441A21794CAD30013C457 /* ViewController.xib */; };
+		3A9EFB801794F95E00757A27 /* mnf_theme_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EFB7F1794F95E00757A27 /* mnf_theme_music.mp3 */; };
+		3A9EFB821795024A00757A27 /* Jeopardy_Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EFB811795024900757A27 /* Jeopardy_Theme.mp3 */; };
+		3A9EFB84179503F200757A27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9EFB83179503F200757A27 /* AVFoundation.framework */; };
+		3A9EFB871797C48300757A27 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9EFB861797C48300757A27 /* MediaPlayer.framework */; };
+		3A9EFBBB179822D600757A27 /* sneeze.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3A9EFB851797C3CA00757A27 /* sneeze.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		3A74419F1794CAD30013C457 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3A7441A01794CAD30013C457 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A7441A31794CAD30013C457 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3A9EFB7F1794F95E00757A27 /* mnf_theme_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mnf_theme_music.mp3; sourceTree = "<group>"; };
+		3A9EFB811795024900757A27 /* Jeopardy_Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jeopardy_Theme.mp3; sourceTree = "<group>"; };
+		3A9EFB83179503F200757A27 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3A9EFB851797C3CA00757A27 /* sneeze.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = sneeze.m4v; sourceTree = "<group>"; };
+		3A9EFB861797C48300757A27 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9EFB871797C48300757A27 /* MediaPlayer.framework in Frameworks */,
+				3A9EFB84179503F200757A27 /* AVFoundation.framework in Frameworks */,
 				3A7441881794CAD30013C457 /* UIKit.framework in Frameworks */,
 				3A74418A1794CAD30013C457 /* Foundation.framework in Frameworks */,
 				3A74418C1794CAD30013C457 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +85,8 @@
 		3A7441861794CAD30013C457 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A9EFB861797C48300757A27 /* MediaPlayer.framework */,
+				3A9EFB83179503F200757A27 /* AVFoundation.framework */,
 				3A7441871794CAD30013C457 /* UIKit.framework */,
 				3A7441891794CAD30013C457 /* Foundation.framework */,
 				3A74418B1794CAD30013C457 /* CoreGraphics.framework */,
@@ -96,6 +110,9 @@
 		3A74418E1794CAD30013C457 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A9EFB851797C3CA00757A27 /* sneeze.m4v */,
+				3A9EFB811795024900757A27 /* Jeopardy_Theme.mp3 */,
+				3A9EFB7F1794F95E00757A27 /* mnf_theme_music.mp3 */,
 				3A74418F1794CAD30013C457 /* Jul18-Info.plist */,
 				3A7441901794CAD30013C457 /* InfoPlist.strings */,
 				3A7441931794CAD30013C457 /* main.m */,
@@ -158,11 +175,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9EFBBB179822D600757A27 /* sneeze.m4v in Resources */,
 				3A7441921794CAD30013C457 /* InfoPlist.strings in Resources */,
 				3A74419A1794CAD30013C457 /* Default.png in Resources */,
 				3A74419C1794CAD30013C457 /* Default@2x.png in Resources */,
 				3A74419E1794CAD30013C457 /* Default-568h@2x.png in Resources */,
 				3A7441A41794CAD30013C457 /* ViewController.xib in Resources */,
+				3A9EFB801794F95E00757A27 /* mnf_theme_music.mp3 in Resources */,
+				3A9EFB821795024A00757A27 /* Jeopardy_Theme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +318,7 @@
 				3A7441A91794CAD30013C457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
